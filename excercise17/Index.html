@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="scripts/jquery-1.12.0.js"></script>
+    <link href="Content/jquery.mobile-1.4.5.css" rel="stylesheet" />
+    <script src="scripts/jquery.mobile-1.4.5.js"></script>
+    <script src="scripts/Chart.js"></script>
+   
+    <link href="CSS/main.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <script src="JS/main.js"></script>
+</head>
+<body>
+    
+     
+    <div data-role="page">
+        <div data-role="header">
+            <h1>Excercise 17 - HTML</h1>
+        </div>
+        <div id="main-container" role="main" class="ui-content">
+
+
+            <table id="tablePerson" data-role="table" data-mode="reflow" class="ui-responsive">
+            
+                <thead>
+
+                    <tr>
+                        <th><div id="colId">Id:</div></th>
+                        <th><div id="colFirstName">Firstname</div></th>
+                        <th><div id="colLastName">Lastname:</div></th>
+                        <th><div id="colPhone">Phone:</div></th>
+                        <th><div id="colEmail">Mail</div></th>
+                    </tr>
+                </thead>
+                <tbody>
+                  
+                  
+
+                    <tr>
+                        <td><div>19880401-1111</div></td>
+                        <td><div>Fredrik</div></td>
+                        <td><div>Lindqvist</div></td>
+                        <td><div>08-7672151</div></td>
+                        <td><div>frlindqv@kth.se</div></td>
+
+                    </tr>
+
+                    <tr>
+                        <td><div>19441212-1224</div></td>
+                        <td><div>Anna</div></td>
+                        <td><div>Larson</div></td>
+                        <td><div>08-7672153</div></td>
+                        <td><div>anna@email.se</div></td>
+
+                    </tr>
+
+                    <tr>
+                        <td><div>19850601-1121</div></td>
+                        <td><div>Stina</div></td>
+                        <td><div>Andersson</div></td>
+                        <td><div>08-7674455</div></td>
+                        <td><div>stina@email.se</div></td>
+
+                    </tr>
+                </tbody>
+            </table> 
+            <div>
+                    <fieldset>
+                        <legend>New person:</legend>
+                        <div>
+                            <label>Firstname:</label>
+                            <input type="text" id="firstName" required />
+                        </div>
+                        <div>
+                            <label>Lastname:</label>
+                            <input type="text" id="lastName" required />
+                        </div>
+                        <div>
+                            <label>SSN:</label>
+                            <input type="text" id="ssn" required />
+                        </div>
+                        <div>
+                            <label>Phone:</label>
+                            <input type="text" id="phone" required />
+                        </div>
+                        <div>
+                            <label>Email:</label>
+                            <input type="text" id="email" required />
+                        </div>
+                        <div>
+                            <input type="button" id="btnAddPerson" value="Add" />
+                            <input type="button" id="btnSortByFirstName" value="Sort firstname" />
+                            <input type="button" id="btnSortByLastName" value="Sort lastname" />
+                        </div>
+                    </fieldset>
+
+                    <div>
+                        <select id="ddlLeftColumn"></select>
+
+                        <select id="ddlRightColumn"></select>
+
+                    </div>
+                    <input type="button" id="btnSwapColumns" value="Swap columns" />
+
+                </div>
+                <div>
+
+                    <canvas id="chartWithAgeDistribution" width="250" height="250"></canvas>
+
+                    <canvas id="chartBarChart" min-width="250" min-height="250"></canvas>
+
+                </div>
+
+
+            </div>
+            <div data-role="footer">
+                <h1>footer</h1>
+            </div>
+     </div>
+    </div>
+</body>
+</html>

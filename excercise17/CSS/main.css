@@ -1,0 +1,71 @@
+﻿body {
+    background-color: gainsboro;
+    margin: 0;
+    padding: 0;
+}
+
+/*------- Header settings --------*/
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: black;
+    padding: 1em 0;
+}
+
+
+/*------- Header settings ------ */
+h1 {
+    color: #FFF;
+    text-align: center;
+    font-size: 3em;
+}
+
+#main-container {
+    background-color: #FFF;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2em 0 10em;
+
+}
+
+
+
+/* ---- Table Settings ------- */
+table {
+    
+    width: 70%; 
+    margin: 0 auto;
+    padding: 0;
+    border: 1px solid black;
+    
+}
+
+
+    table tr:nth-child(odd) td {
+         background-color: steelblue;
+         color: #FFF;
+         
+    
+    }
+
+     table tr:nth-child(odd) td:hover {
+         background-color: lawngreen;
+         color: black;
+     
+    
+    }
+
+    
+    table tr:first-child td, table tr:first-child td:hover {
+        background-color: black;
+        color: #FFF;
+    } 
+
+
+td {
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+    border: 1px solid black;
+} 
